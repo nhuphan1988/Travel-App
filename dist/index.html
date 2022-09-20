@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Journal</title>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    <link href="main.css" rel="stylesheet"></head>
+    <body>
+        <div id = "app">
+            <div class = 'box' id = 'box1'>
+                <div class ="holder headline">Travel Planner</div>
+                <div class = "title">My Trips:</div>
+            </div>
+            <div class = 'box' id ="box2">
+                <div id = "photo-holder"><img id = "photo-output"></div> 
+                <div id = "entry-holder">
+                    <div id = 'location-output'></div>
+                    <div id = 'date-output'></div>
+                    <div id = "days-away"></div>
+                    <div id = "trip-length"></div>
+                    <br>
+                    <div class = "weather-box">
+                        <div id = 'typical-weather'></div>
+                        <div id = "temp-output"></div>
+                        <div id = "weather-output"></div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'box' id ="box3" >
+                <div id = 'input-holder'>
+                    <div class ="holder city">
+                        <label for="city">Enter City Name Here</label>
+                        <span class="msg" id="msg-city"></span>
+                        <input type="text" id="city" placeholder="enter city name here">
+                    </div>
+                    <div class ="holder date">
+                        <label for="date">Enter Trip Start Date Here</label>
+                        <span class="msg" id="msg-date-start"></span>
+                        <input type="date" id="date-start" placeholder="enter trip start date here">
+                    </div>
+                    <div class ="holder date">
+                        <label for="date">Enter Trip End Date Here</label>
+                        <span class="msg" id="msg-date-end"></span>
+                        <input type="date" id="date-end" placeholder="enter trip end date here"> 
+                    </div>
+                </div>
+                <div id = 'button-holder'>
+                    <div class ="button">
+                        <button id="save" type = "submit"> save trip </button>
+                    </div>
+                    <div class ="button">
+                        <button id="remove" type = "submit" onClick="window.location.reload();"> remove trip </button>
+                    </div>
+                </div>
+            </div>
+            <div class = 'box footer' id ="box4" >Copyright@2022</div>
+        </div>
+        <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+        </script>
+    <script type="text/javascript" src="main.js"></script></body>
+</html>

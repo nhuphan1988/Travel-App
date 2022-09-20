@@ -1,0 +1,22 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    // height:100vh;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border: solid gray;
+    padding: 5px;
+    max-width: 640px;
+}
+
+.box{
+    width: 95%;
+}
+
+
