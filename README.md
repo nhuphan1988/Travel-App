@@ -40,6 +40,7 @@
 - "clean-webpack-plugin": "^3.0.0",
 - "cors": "^2.8.5",
 - "css-loader": "^3.6.0",
+- "dotenv": "^16.0.2",
 - "form-data": "^4.0.0",
 - "html-webpack-plugin": "^3.2.0",
 - "http": "^0.0.1-security",
