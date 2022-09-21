@@ -18,9 +18,9 @@
     + npm run start
     + input city name, start date and end date, then submit and wait for the result
     + request to be sent to these webpages:
-    http://api.geonames.org/ (to get lat and lng data based on city input by user)
-    https://api.weatherbit.io/v2.0/forecast/ (to get 16 days weather forecast based on lat and lng)
-    https://pixabay.com/api/ (to get image of city input by user)
+        - http://api.geonames.org/ (to get lat and lng data based on city input by user)
+        - https://api.weatherbit.io/v2.0/forecast/ (to get 16 days weather forecast based on lat and lng)
+        - https://pixabay.com/api/ (to get image of city input by user)
 
 - To test: npm run test 
 
